@@ -131,10 +131,10 @@ inventory[1].name
 
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 
-! foreach to look at every object in that array
+// ! foreach to look at every object in that array
 // ! create an empty array =>> return that modified array
-! push available item to my array - how do i know if it is available?
-! if statement
+// ! push available item to my array - how do i know if it is available?
+// ! if statement
 
 ------------------------------------------------------------------------------------------------ */
 
