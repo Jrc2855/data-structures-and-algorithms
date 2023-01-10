@@ -68,7 +68,6 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 
 
 const greeting = (word) => {
-  console.log(typeof(word));
   let result = word.toUpperCase() + '!';
   return result;
 };
@@ -128,11 +127,29 @@ The inventory is formatted like this:
   { name: 'blueberries', available: false }
 ]
 
+inventory[1].name
+
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+
+! foreach to look at every object in that array
+// ! create an empty array =>> return that modified array
+! push available item to my array - how do i know if it is available?
+! if statement
+
 ------------------------------------------------------------------------------------------------ */
 
+// Solution from Class Code Review
 const createList = (availableItems) => {
   // Solution code here...
+  let listArr = [];
+  
+  availableItems.forEach((item)=>{
+    if(item.available){
+      listArr.push(item.name);
+    }
+  });
+
+  return listArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
