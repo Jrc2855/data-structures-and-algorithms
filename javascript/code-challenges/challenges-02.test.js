@@ -64,6 +64,18 @@ const forLoopTwoToThe = (arr) => {
   return arr;
 };
 
+// Code from in class code review
+
+// const forLoopTwoToThe = (arr) => {
+//   let newArr = [];
+
+//   for(let num of arr){
+//     newArr.push(Math.powe(2,num));
+
+//     return newArr;
+//   }
+// }
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
