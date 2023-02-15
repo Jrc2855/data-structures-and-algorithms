@@ -4,7 +4,8 @@
 
 ### Whiteboards
 
-[array-reverse](arrayReverse/README.md)
+[array-reverse](/Whiteboard-Challenges/Array-Reverse-README.md)
+[Insert Shift Array](/Whiteboard-Challenges/Insert-Shift-Array-README.md)
 
 ### Folder and Challenge Setup
 

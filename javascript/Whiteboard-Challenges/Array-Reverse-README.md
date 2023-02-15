@@ -14,4 +14,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 
 This whiteboard was taken from in class review
-![Our image is going to go here!](/assets/Array-Reverse-Whiteboard.png)
+![Reverse Array](/assets/Array-Reverse-Whiteboard.png)
