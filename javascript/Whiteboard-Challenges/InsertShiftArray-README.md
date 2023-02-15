@@ -9,4 +9,4 @@ Write a function called insertShiftArray which takes in an array and a value to 
 - Do we have to return the original array or a new array?
 - What type of Data will we be working with?
 
-![Insert Shift Array Whiteboard](/assets/insertShiftArray-Whiteboard.jpg)
+![Insert Shift Array Whiteboard](assets/insertShiftArray-Whiteboard.jpg)
