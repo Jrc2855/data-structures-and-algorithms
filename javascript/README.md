@@ -5,6 +5,7 @@
 ### Whiteboards
 
 [array-reverse](arrayReverse/README.md)
+[Linked-List-Zip](Linked-List-Zip-README.md)
 
 ### Folder and Challenge Setup
 
