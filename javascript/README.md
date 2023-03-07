@@ -7,6 +7,11 @@
 [array-reverse](arrayReverse/README.md)
 [Linked-List-Zip](Linked-List-Zip-README.md)
 
+
+#### Binary Search Trees
+
+[Breadth First](./binary-search-tree/BreadthFirstTree.README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
