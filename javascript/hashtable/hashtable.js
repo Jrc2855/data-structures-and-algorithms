@@ -50,6 +50,19 @@ class HashTable {
   }
 }
 
+//-----LeftJoin-----//
+const leftJoin = (left, right) => {
+  let result = [];
+  let leftKeys = left.keys();
+  for(let i = 0; i < leftKeys.length; i++){
+    let key = leftKeys[i];
+    let value = left.get(key);
+    let rightValue = right.get(key);
+    result.push([key, value, rightValue]);
+  }
+  return result;
+};
+
 const table = new HashTable(1024);
 const hashOne = table.hash('John');
 const hashTwo = table.hash('Ryan');
