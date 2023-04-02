@@ -50,6 +50,19 @@ class HashTable {
   }
 }
 
+//-----LeftJoin-----//
+const leftJoin = (left, right) => {
+  let result = [];
+  let leftKeys = left.keys();
+  for(let i = 0; i < leftKeys.length; i++){
+    let key = leftKeys[i];
+    let value = left.get(key);
+    let rightValue = right.get(key);
+    result.push([key, value, rightValue]);
+  }
+  return result;
+};
+
 const table = new HashTable(1024);
 const hashOne = table.hash('John');
 const hashTwo = table.hash('Ryan');
@@ -79,4 +92,33 @@ console.log("========================");
 console.log(table.keys());
 console.log("========================");
 console.log('proof of life for SET', table);
+
+
+
+//-----Repeated Word Function-----//
+function repeatedWord(str) {
+  const theseUnsHereAintNoWord = [' ', ',', '.', ';', ':', '-', '_', '!', '?'];
+  const table = new HashTable(1024);
+  let currentWord = '';
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charAt(i).toLowerCase();
+    if (theseUnsHereAintNoWord.includes(char)) {
+      if (currentWord.length > 0) {
+        if (table.has(currentWord)) {
+          return currentWord;
+        }
+        table.set(currentWord, true);
+        currentWord = '';
+      }
+    } else {
+      currentWord += char;
+    }
+  }
+  if (currentWord.length > 0 && table.has(currentWord)) {
+    return currentWord;
+  }
+  return null;
+}
+
+repeatedWord('How much wood could a wood chuck chuck if a wood chuck could chuck wood?');
 
